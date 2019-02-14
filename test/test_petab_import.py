@@ -85,7 +85,7 @@ class SpecialFeaturesTest(unittest.TestCase):
 
         # convert to dataframe
         amici_df = amici.getDataObservablesAsDataFrame(
-            importer.create_model(), edatas)
+            importer.create_model(), edatas, by_id=True)
 
         # extract original measurement df
         meas_df = importer.petab_problem.measurement_df
